@@ -519,11 +519,11 @@ class SendMailsCronjob
 }
 ```
 
-Cool! There are still a few small imperfections:
-**a)** `sendMails()` and `sendMailCronMails()` are a bit confusing. 
-Now that we have a own class we can shorten the method names.
-**b)** We no longer need the conditional in `sendMailCronMails()` because if `$mails` is empty, it just skips the loop.
-**c)** The methods that aren't used from the outside can be made private.
+Cool! There are still a few small imperfections:    
+**a)** `sendMails()` and `sendMailCronMails()` are a bit confusing.     
+Now that we have a own class we can shorten the method names.     
+**b)** We no longer need the conditional in `sendMailCronMails()` because if `$mails` is empty, it just skips the loop.    
+**c)** The methods that aren't used from the outside can be made private.   
 
 Finally it should look like this:
 
